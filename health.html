@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>التغذية الصحية</title>
+  <link rel="stylesheet" href="health.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>مرحبا</h1>
+  <button onclick="sayHello()">اضغط هنا</button>
+
+  <div class="menu">
+    <ul>
+      <li><a href="#home">الصفحة الرئيسية</a></li>
+      <li><a href="#calories">حساب السعرات</a></li>
+      <li><a href="#gallery">المعرض</a></li>
+      <li><a href="#about">وصفة صحية</a></li>
+      <li><a href="#about">مشروب صحي</a></li>
+      <li><a href="#weight">حاسبة الوزن</a></li>
+      <li><a href="#contact">اتصل بنا</a></li>
+      رغد السعيد 2 / 3<br>
+    </ul>
+  </div>
+
+  <div class="main" id="home">
+    <h1>الأكل الصحي أسلوب حياة</h1>
+    <p>تناول طعام صحي يساعد في تقوية الجسم وتحسين المزاج.</p>
+    رغد السعيد 2 / 3<br>
+  </div>
+
+  <div class="main" id="calories">
+    <h2>آلة حساب السعرات</h2>
+    <p>أدخل عدد الجرامات واحصل على السعرات:</p>
+    <label>كربوهيدرات (جرام): <input type="number" id="carbs"></label><br><br>
+    <label>بروتين (جرام): <input type="number" id="protein"></label><br><br>
+    <label>دهون (جرام): <input type="number" id="fat"></label><br><br>
+    <button onclick="calculateCalories()">احسب</button>
+    <p id="result"></p>
+    رغد السعيد 2 / 3<br>
+  </div>
+
+  <div class="photos" id="gallery">
+    <h2>المعرض</h2>
+    <img src="img/42434607_163926987847235_736634591170789376_n.jpg" width="300" height="200">
+    <img src="img/8aaa0e91-e01c-4811-a3ed-bbfd97365510.jpg" width="300" height="200">
+    <img src="img/pngtree-healthy-eating-fruit-and-vegetable-combination-image_863046.jpg" width="300" height="200">
+    <img src="img/shutterstock_521741356.jpg" width="300" height="200">
+    شذى المعيجل 2 / 3 <br>
+  </div>
+
+  <div class="footer" id="about">
+    <h2>وصفة صحية</h2>
+    <div class="recipe">
+      <h2>سلطة الفواكه الصحية</h2>
+      <p>وصفة سهلة ولذيذة تحتوي على مكونات مغذية:</p>
+      <ul>
+        <li>تفاح مقطع</li>
+        <li>موز</li>
+        <li>فراولة</li>
+        <li>عصير ليمون</li>
+        <li>عسل (اختياري)</li>
+      </ul>
+      <p><strong>طريقة التحضير:</strong></p>
+      <p>
+        1. قطع الفواكه إلى قطع صغيرة. <br>
+        2. ضعها في وعاء، وأضف عصير الليمون والعسل حسب الرغبة. <br>
+        3. امزج المكونات جيدًا وقدمها باردة.
+      </p>
+      شذى المعيجل 2 / 3 <br>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>طريقة عمل مشروب صحي 🍋</h1>
+    <h2>المكونات:</h2>
+    <ul>
+      <li>كوب ماء بارد 💧</li>
+      <li>نصف ليمونة 🍋</li>
+      <li>شرائح خيار 🥒</li>
+      <li>ملعقة صغيرة زنجبيل مبشور 🧡</li>
+      <li>بعض أوراق النعناع 🌿</li>
+    </ul>
+    <h2>طريقة التحضير:</h2>
+    <ul>
+      <li>اعصري نصف ليمونة في كوب الماء.</li>
+      <li>أضيفي شرائح الخيار والزنجبيل.</li>
+      <li>ضعي أوراق النعناع، وحرك المزيج بلطف.</li>
+      <li>اتركيه في الثلاجة لمدة 15-30 دقيقة.</li>
+      <li>اشربيه باردًا واستمتعي بالطاقة!</li>
+    </ul>
+    <div class="tip">
+      🧊 <strong>نصيحة:</strong> تقدرين تضيفين  ثلج لزيادة  الانتعاش!
+      <br>ندى الفوزان 2/3
+    </div>
+  </div>
+
+  <div class="main" id="weight">
+    <h2>حاسبة الوزن</h2>
+    <p>ادخل وزنك وطولك:</p>
+    <label for="weight">الوزن (كجم):</label>
+    <input type="number" id="weightInput" placeholder="ادخل وزنك بالكيلوغرام" required>
+    <label for="height">الطول (سم):</label>
+    <input type="number" id="height" placeholder="ادخل طولك بالسنتيمتر" required>
+    <button onclick="calculateBMI()">احسب</button>
+    <div id="bmiResult"></div>
+    كريمان المشاري 2 / 3 <br>
+  </div>
+
+  <div class="footer" id="contact">
+    <h2>معلومات التواصل</h2>
+    <ul>
+      <li><a href="mailto:sasm1429@hotmail.com">sasm1429@hotmail.com</a></li>
+      <li><a href="https://www.mos.gov.sa/" target="_blank">وزارة الرياضة</a></li>
+      <li><a href="https://www.moh.gov.sa/Pages/Default.aspx" target="_blank">وزارة الصحة</a></li>
+          <a href="https://www.instagram.com/shathali3_/" target="_blank">تابعني على إنستقرام </a>
+    </ul>
+    شذى المعيجل 2 / 3 <br>
+  </div>
+
+</body>
+</html>
